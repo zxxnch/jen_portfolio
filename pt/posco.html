@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스코</title>
+<style>
+    body {
+    background-color: #EFE7E3;
+}
+
+.frame {
+    margin: 30px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*navigator*/
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-left: 15px;
+}
+
+ul {
+    margin: 0;
+}
+
+.site-name {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #C2B4AB;
+}
+
+.nav-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+
+/*dashboard*/
+
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.korean-comment {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.sample {
+    background-color: pink;
+    -webkit-text-stroke: 1px black;
+}
+
+.sample:hover {
+    background-color: transparent;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    transition: none;
+}
+
+.highlight {
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.highlight:hover {
+    background-color: pink;
+    color: black;
+    transition: none;
+}
+
+.type1:hover {
+    background-color: yellowgreen;
+}
+
+.type2:hover {
+    background-color: rgb(235, 135, 173);
+}
+
+.type3:hover {
+    background-color: orange;
+}
+
+.english-comment {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 120;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+/*recent works*/
+
+.recent-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #C2B4AB;
+
+    text-align: right;
+    margin-top: 100px;
+}
+
+
+
+/*footer*/
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 40px;
+    border-bottom: 2px solid black;
+}
+
+.links>a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.footer>p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0;
+    margin-top: 5px;
+}
+
+
+
+/* INFO Section*/
+
+
+/*profile-section*/
+
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 100px 100px;
+}
+
+
+#profile-picture {
+    width: 400px;
+    margin-right: 60px;
+}
+
+.introduction>h2 {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+}
+
+.introduction>p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    width: 640px;
+    margin-bottom: 40px;
+
+}
+
+#capability {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+
+    line-height: 30px;
+}
+
+.study-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.study {
+    margin: 20px;
+}
+
+/*value section*/
+
+.value-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    margin: 30px 100px;
+    margin-bottom: 50px;
+}
+
+.value-menu:hover {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.value-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 100px 150px;
+    margin-top: 20px;
+}
+
+.value {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
+
+}
+
+
+.value-icon {
+    width: 100px;
+    height: 100px;
+
+    border: 2px solid #C2B4AB;
+    border-radius: 100px;
+    padding: 15px;
+}
+
+.value-intro {
+    margin-left: 30px;
+}
+
+
+.value-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.value-exp {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+
+    margin: 0px;
+}
+
+
+
+#logo {
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+#python {
+    width: 400px;
+}
+
+#flask {
+    width: 350px;
+
+}
+
+
+
+
+/*footer section*/
+
+.footer-comment {
+    text-align: center;
+}
+
+
+a[title="Freepik"]:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a[title="Flaticon"]:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* RECENT WORKS */
+
+.recent-works {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 120px;
+    align-items: center;
+
+}
+
+.thumbnail {
+    width: 500px;
+    opacity: 0.8;
+
+}
+
+
+.article-info {
+    margin: 0px -80px;
+}
+
+.article-name {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 90px;
+}
+
+.article-name:hover {
+    color: rgb(0, 83, 190);
+    -webkit-text-stroke: 1px black;
+    transition: 0.3s;
+}
+
+
+
+.article-comment {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 120;
+    margin-left: 90px;
+}
+
+.more {
+    width: content;
+    height: content;
+    float: right;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0px;
+}
+
+
+
+
+#name1:hover {
+    color: rgb(17, 0, 255);
+}
+
+#name2-1 {
+    text-align: right;
+    position: relative;
+    left: 0px;
+    margin-bottom: 0px;
+
+}
+
+#name2-2 {
+    text-align: right;
+    position: relative;
+
+
+}
+
+#name2-2:hover {
+    color: orange;
+}
+dl{
+    font-size: 30px;
+}
+
+#ui-picture {
+    width: 550px;
+    height: 440px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:-110px;
+    margin-bottom: 100px;
+}
+#spot3{
+    padding: 30px;
+    margin-bottom:40px ;
+}
+#spot,#spot2{
+    font-size: 24px;
+    margin-bottom: -50px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+    <div class="frame">
+        
+        <nav class="navigator">
+            <h3 class="site-name">전창희포트폴리오 </h3>
+            <ul>
+                <li><a class="nav-menu" href="index.html">WORK</a></li>
+                <li><a class="nav-menu" href="info.html">INFO</a></li>
+            </ul>
+        </nav>
+
+        <div class="profile-section">
+            
+            <img id="ui-picture" src="/static/posco1.jpg">
+            <div class="introduction">
+                <h3 class="article-name" id="name1">Main Task</h3>
+                <div class="maintask">
+                    <dl>포스코 시편용접 롱런테스트</dl>
+                    <p  id="capability">º 스팟용접 35개 모션 가티칭 진행 <br>º 스팟용접 35개 복구 모션티칭 진행 <br>º 현장맞춤 티칭 수정진행  <br>º FAT 검수 <br>º PLC 단동 테스트 확인 </p>
+                    <dl>포스코 인장시험 롱런테스트 </dl>
+                    <p  id="capability">º 인장시험 35개 모션 가티칭 진행 <br>º 인장시험 35개 복구 모션티칭 진행 <br>º 현장맞춤 티칭 수정진행  <br>º FAT 검수 <br>º PLC 단동 테스트 확인 </p>
+                </div>
+            </div>
+        </div>
+    
+            <h3 class="article-name" id="name1">VIDEO</h3>
+            <div class="video">
+                <h2 class="article-name" id="spot">스팟용접</h2>
+                <video src = "static/posco1.mp4" id='spot3' controls width="800" height="600">
+                </video>
+            </div>
+            <div class="video">
+                <h2 class="article-name" id="spot2">인장시험</h2>
+                <video src = "static/spot.mp4" controls width="800" height="600">
+                </video>
+            </div>
+           
+
+        <div class="article" id="arti1" >
+            <h3 class="article-name" id="name1">RESULT</h3>
+        <p class="article-comment">2023년 8월, ‘포스코’ 회사에서 시편용접/인장시험 테스트 자동화하는 공정에 투입되었다.<br>위 공정에서는 시편용접 35개, 인장시험 35개 그리고 각각의 복구모션을 티칭하였다.<br>mm 단위의 얇은시편을 사용하기 위해 정확하고 섬세한 미세티칭을 진행하였다.<br>포스코 글로벌 R&D 센터 현장에서는 관계자들의 피드백및 요청사항을 적용시켜 <br> 실제 용접기,인장시험기와의 간섭및 충돌발생이 일어나지않도록 정확한 동작수행을 위한 <br>티칭 수정또한 진행하였다.<br>
+         
+        </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
